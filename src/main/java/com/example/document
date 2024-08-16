@@ -1,0 +1,21 @@
+1. API get
+- Find all
+path/find-all
+- Search
+path/search?query=[value]
+2. API add
+path/add
+3. API update
+path/update/{code}
+4. API delete
+path/delete/{code}
+
+
+--- DTO: là các đối tượng Java được sử dụng để truyền dữ liệu dữ liệu giữa các thành phần của ứng dụng
+Chúng không nhất thiết phản ánh cấu trúc của cơ sở dữ liệu mà thay vào đó,
+chúng thường được tinh chỉnh để đáp ứng các yêu cầu cụ thể của giao diện người dùng hoặc của các API.
+DTO thường chứa một phạm vi dữ liệu nhỏ hơn so với model, chỉ chứa những thông tin cần thiết để giao tiếp hoặc hiển thị dữ liệu.
+DTO thường không chứa các annotation JPA, bởi vì chúng không liên quan trực tiếp đến cơ sở dữ liệu.
+
+--- Model: là các đối tượng Java được sử dụng để ánh xạ dữ liệu từ cơ sở dữ liệu.
+Chúng thường được thiết kế để phản ánh cấu trúc của cơ sở dữ liệu và chứa các trường và phương thức để truy cập dữ liệu.
